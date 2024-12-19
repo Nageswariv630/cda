@@ -15,6 +15,8 @@ public interface UserService {
 
 	String deletUserById(int id);
 
-	ResponseEntity<?> verifyOTP(int id, int otp);	
+	ResponseEntity<?> verifyOTP(int id, int otp);
+
+	ResponseEntity<?> findUserByEmail(String email);	
 
 }

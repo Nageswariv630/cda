@@ -32,4 +32,8 @@ public  class UserDaoImpl implements UserDao{
 		 repository.deleteById(id);
 		
 	}
+	@Override
+	public Optional<User> findUserByEmail(String email) {
+		return repository.findUserByEmail(email);
+	}
 }
